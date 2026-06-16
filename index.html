@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de TMB</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <h1>Calculadora de TMB</h1>
+        <h2>Taxa Metabólica Basal</h2>
+
+        <div class="sexo">
+            <div class="radio">
+                <input type="radio" id="masculino" name="sexo" value="Masculino" checked>
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" id="feminino" name="sexo" value="Feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+        </div>
+
+        <div class="form">
+            <input id="idade" type="number" placeholder="Idade"/>
+            <input id="peso" type="number" placeholder="Peso (kg)"/>
+            <input id="altura" type="number" placeholder="Altura (cm)"/>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="btn btn-limpar" onclick="Limpar()">Limpar</button>
+            <button type="submit" class="btn btn-calcular" onclick="Calcular()">Calcular</button>
+        </div>
+
+        <div class="resultado">
+            <h3>
+                Resultado:
+                <label id="lblResultado">0</label>
+                <label>kcal</label>
+            </h3>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>Made by <a href="http://denisbm.com" target="_blank">Denis Bittencourt</a>!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
